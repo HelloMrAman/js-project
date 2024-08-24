@@ -18,23 +18,23 @@
                     <i class="fa-solid fa-bars"></i>
                 </div>
             </nav>
-            <img src="disc.png" class="song-img" alt="Song Cover">
+            <img src="https://i.scdn.co/image/ab67616d0000b2732e1c6382b5cb1571270aad83" class="song-img" alt="Song Cover">
             <h1>Fairytale</h1>
             <p>Alexander Rybak</p>
 
-            <audio controls>
+            <audio id="song">
                 <source src="https://djmaza.live/files/download/type/320/id/5981" type="audio/mpeg">
             </audio>
             <input type="range" value="0" id="progress">
 
             <div class="controls">
-                <div class="fa-solid fa-backward-step"></div>
-                <div class="fa-solid fa-play"></div>
-                <div class="fa-solid fa-forward-step"></div>
+                <div><i class="fa-solid fa-backward-step"></i></div>
+                <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+                <div><i class="fa-solid fa-forward-step"></i></div>
             </div>
         </div>
     </div>
  
-<script src="script.js"></script>    
+    <script src="script.js"></script>    
 </body>
 </html>
